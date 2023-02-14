@@ -2,32 +2,32 @@ const team =[
     {
         name: 'Wayne Barnett',
         job: 'Founder & CEO',
-        image :'wayne-barnett-founder-ceo.jpg'
+        image :'./img/wayne-barnett-founder-ceo.jpg'
     },
     {
         name: 'Angela Caroll',
         job: 'Chief Editor',
-        image :'angela-caroll-chief-editor.jpg'
+        image :'./img/angela-caroll-chief-editor.jpg'
     },
     {
         name: 'Walter Gordon',
         job: 'Office Manager',
-        image :'walter-gordon-office-manager.jpg'
+        image :'./img/walter-gordon-office-manager.jpg'
     },
     {
         name: 'Angela Lopez',
         job: 'Social Media Manager',
-        image :'angela-lopez-social-media-manager.jpg'
+        image :'./img/angela-lopez-social-media-manager.jpg'
     },
     {
         name: 'Scott Estrada',
         job: 'Developer',
-        image :'scott-estrada-developer.jpg'
+        image :'./img/scott-estrada-developer.jpg'
     },
     {
         name: 'Barbara Ramos',
         job: 'Graphic Designer',
-        image :'barbara-ramos-graphic-designer.jpg'
+        image :'./img/barbara-ramos-graphic-designer.jpg'
     },
 ]
 // MILESTONE 1:
@@ -53,11 +53,11 @@ for (let i = 0; i < team.length; i++) {
 	console.log(name, job, image)
     const card = `
     <div class="col-4 ">
-    <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text"> ${name}</p>
-            <p class="card-text"> ${job}</p>
+    <div class="card m-4">
+        <img src="${image}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+            <p class="card-text fs-2 fw-bold "> ${name}</p>
+            <p class="card-text  fs-4 fst-italic"> ${job}</p>
         </div>
     </div>
 </div>
